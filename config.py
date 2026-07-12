@@ -14,23 +14,15 @@ import os
 # Racine du module (permet de lancer le script depuis n'importe où)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Dossier contenant le dataset Kaggle "Garbage Classification" déjà extrait.
-# Structure attendue (format ImageFolder / image_dataset_from_directory) :
-#   data/raw/
-#       cardboard/*.jpg
-#       glass/*.jpg
-#       metal/*.jpg
-#       paper/*.jpg
-#       plastic/*.jpg
-#       trash/*.jpg
+
 DATA_DIR = os.path.join(BASE_DIR, "data", "raw")
 
 # Où sauvegarder le modèle entraîné (livrable Jalon 1)
-SAVED_MODEL_DIR = os.path.join(BASE_DIR, "saved_model")
-MODEL_PATH = os.path.join(SAVED_MODEL_DIR, "modele_eco_sort.h5")
+MODEL_DIR = os.path.join(BASE_DIR, "models")
+MODEL_PATH = os.path.join(MODEL_DIR, "modele_eco_sort.h5")
 
 # Où sauvegarder les artefacts d'entraînement (courbes, rapport, matrice de confusion)
-OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+OUTPUTS_DIR = os.path.join(BASE_DIR,"docs", "outputs")
 HISTORY_PLOT_PATH = os.path.join(OUTPUTS_DIR, "training_history.png")
 CONFUSION_MATRIX_PATH = os.path.join(OUTPUTS_DIR, "confusion_matrix.png")
 CLASSIFICATION_REPORT_PATH = os.path.join(OUTPUTS_DIR, "classification_report.txt")

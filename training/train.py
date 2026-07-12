@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 
 import matplotlib
 matplotlib.use("Agg")  
@@ -9,6 +10,7 @@ import tensorflow as tf
 from sklearn.metrics import classification_report, confusion_matrix
 import seaborn as sns
 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import config
 import model as model_lib
 from data_loader import get_datasets

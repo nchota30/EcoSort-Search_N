@@ -7,6 +7,7 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 import config
 from labels import get_bin_for_class, detect_d3e, D3E_INFO
 

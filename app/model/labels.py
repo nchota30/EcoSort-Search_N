@@ -3,7 +3,7 @@ labels.py
 ---------
 Le dataset Kaggle "Garbage Classification" fournit 6 classes brutes :
 cardboard, glass, metal, paper, plastic, trash.
-
+ZEDZDEZEZFEFE
 Le projet exige 5 catégories de tri officielles, dont le Bac Électronique
 (D3E) qui N'EXISTE PAS dans le dataset image. Ce module centralise :
 

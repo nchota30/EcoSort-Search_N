@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 requests==2.31.0
 beautifulsoup4==4.12.2
 lxml==4.9.3
@@ -6,10 +7,15 @@ selenium==4.15.2
 python-dotenv==1.0.0
 pandas==2.1.4
 =======
+=======
+>>>>>>> 4c5414432b77934a290d5993768dafbb324eae09
 tensorflow
 pillow
 numpy
 scikit-learn
 matplotlib
 seaborn
+<<<<<<< HEAD
+>>>>>>> 4c5414432b77934a290d5993768dafbb324eae09
+=======
 >>>>>>> 4c5414432b77934a290d5993768dafbb324eae09

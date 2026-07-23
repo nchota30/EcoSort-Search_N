@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Environnements virtuels
 .venv/
 venv/
@@ -51,3 +52,9 @@ desktop.ini
 # Selenium (si utilisé pour le scraping)
 geckodriver.log
 chromedriver.log
+=======
+.venv/
+data/raw/
+__pycache__/
+battery.jpg
+>>>>>>> ec402bf6f9ba0db44adfcbb67f35b0f6e60b8b3e

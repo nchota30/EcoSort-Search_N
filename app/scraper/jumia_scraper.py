@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-def search_jumia(query: str) -> list[dict]:
-    """
-    MOCK temporaire - à remplacer par le vrai scraper de l'équipe.
-    Retourne des résultats factices respectant le contrat d'interface.
-    """
-    return [
-        {
-            "nom": f"{query} - Résultat {i}",
-            "image_url": "https://via.placeholder.com/150",
-            "lien": "https://www.jumia.com",
-            "prix": f"{1000 * i} FCFA",
-        }
-        for i in range(1, 4)
-    ]
-=======
 import re
 import requests
 from bs4 import BeautifulSoup
@@ -243,4 +227,3 @@ def main():
     print(json.dumps(resultats, ensure_ascii=False, indent=4))
 if __name__ == "__main__":
     main()
->>>>>>> ec402bf6f9ba0db44adfcbb67f35b0f6e60b8b3e

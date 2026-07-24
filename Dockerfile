@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 
 # Copier et installer les dépendances Python d'abord (optimise le cache Docker)
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --default-timeout=300 --retries=5 -r requirements.txt
 
 # Copier le reste du code
 COPY . .
